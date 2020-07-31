@@ -1,0 +1,17 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: "usermanager"
+  datasource:
+    druid:
+      username: "root"
+      password: "123456"
+      url: "jdbc:mysql://192.168.1.171:13306/eermms?autoreconnect=true&useUnicode=true&characterEncoding=utf8&autoReconnect=true&amp&serverTimezone=UTC"
+      driver-class-name: "com.mysql.cj.jdbc.Driver"
+      initial-size: 5
+      min-idle: 5
+      max-active: 20
+mybatis:
+  mapper-locations: classpath:mapper/*Mapper.xml
+  type-aliases-package: com.wh.usermanger.model
